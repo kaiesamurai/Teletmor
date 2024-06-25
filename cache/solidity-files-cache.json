@@ -1,0 +1,76 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Volumes/SuccessLab/drive/Projects/Dapps/botfi/botfi-wallet/contracts/Balances.sol": {
+      "lastModificationDate": 1700648283000,
+      "contentHash": "db200794fbbdaae6146253c1dcebbe4a",
+      "sourceName": "contracts/Balances.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Balances",
+        "IERC20"
+      ]
+    },
+    "/Volumes/SuccessLab/drive/Projects/Dapps/botfi/botfi-wallet/contracts/DeploylessMulticall2.sol": {
+      "lastModificationDate": 1700606460000,
+      "contentHash": "0b5b44f15fd8bdd73965f95f9be36e21",
+      "sourceName": "contracts/DeploylessMulticall2.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.19"
+      ],
+      "artifacts": [
+        "DeploylessMulticall2"
+      ]
+    }
+  }
+}

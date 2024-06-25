@@ -1,0 +1,122 @@
+/*:root {
+  --bs-body-bg: #1e1e1e;
+}*/
+
+.hidden { display: none !important; }
+
+body {
+ background: var(--bs-body-bg);
+ width: 100vw;
+
+}
+
+#main-loader {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+}
+
+#main-loader.hidden * {
+  display: none !important;
+}
+
+.spinner-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.spinner-box::after {
+  content: '';
+  position: absolute;
+  z-index: 200 !important;
+  width: 30px !important;
+  height: 30px !important;
+  background-size: 28px 28px;
+  background-image: url(/images/svg/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.spinner-box.loader-sm::after {
+  width: 28px !important;
+  height: 28px !important;
+  background-size: 24px 24px;
+}
+.spinner-box.loader-sm .configure-border-1, .spinner-box.loader-sm .configure-border-2 {
+  width: 32px !important;
+  height: 32px !important;
+}
+.spinner-box .configure-border-1 {
+  width: 45px !important;
+  height: 45px !important;
+  padding: 3px;
+  border-radius: 4px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fab612;
+  animation: configure-clockwise 3s ease-in-out 0s infinite alternate;
+}
+.spinner-box .configure-border-2 {
+  width: 45px !important;
+  height: 45px !important;
+  padding: 3px;
+  border-radius: 4px;
+  left: -115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3ff9dc;
+  transform: rotate(45deg);
+  animation: configure-xclockwise 3s ease-in-out 0s infinite alternate;
+}
+.spinner-box .configure-core {
+  width: 100%;
+  height: 100%;
+  background-color: #1d2630;
+}
+@keyframes configure-clockwise {
+  0% {
+    transform: rotate(0);
+ }
+  25% {
+    transform: rotate(90deg);
+ }
+  50% {
+    transform: rotate(180deg);
+ }
+  75% {
+    transform: rotate(270deg);
+ }
+  100% {
+    transform: rotate(360deg);
+ }
+}
+@keyframes configure-xclockwise {
+  0% {
+    transform: rotate(45deg);
+ }
+  25% {
+    transform: rotate(-45deg);
+ }
+  50% {
+    transform: rotate(-135deg);
+ }
+  75% {
+    transform: rotate(-225deg);
+ }
+  100% {
+    transform: rotate(-315deg);
+ }
+}
